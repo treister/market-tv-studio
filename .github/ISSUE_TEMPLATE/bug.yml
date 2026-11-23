@@ -1,0 +1,37 @@
+name: Playtest problem
+description: Tell us where the experience broke.
+title: "[Playtest] "
+body:
+  - type: markdown
+    attributes:
+      value: "Please omit tokens, private studio content and raw logs. Use private vulnerability reporting for security issues."
+  - type: input
+    id: version
+    attributes:
+      label: App release version
+      description: "Use 'not installed' for a release-page problem."
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: Mac model/chip and macOS version
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What were you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead?
+      description: "Include the last visible step and approximate time. Do not paste raw provider replies."
+    validations:
+      required: true
+  - type: input
+    id: incident
+    attributes:
+      label: Scrubbed incident identifier, if available

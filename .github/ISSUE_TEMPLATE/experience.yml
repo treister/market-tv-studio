@@ -1,0 +1,23 @@
+name: Cast and show feedback
+description: What made the episode engaging, confusing or worth improving?
+title: "[Experience] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: App release version
+    validations:
+      required: true
+  - type: textarea
+    id: moment
+    attributes:
+      label: Describe the moment
+      description: "Acting, listening, dialogue, charts or the way your feedback was handled. Omit private studio content."
+    validations:
+      required: true
+  - type: textarea
+    id: improvement
+    attributes:
+      label: What would make you want to watch or play again?
+    validations:
+      required: true
